@@ -1,0 +1,13 @@
+#/bin/bash
+
+nitrogen --restore &
+~/.config/bspwm/polybar/launch.sh &
+kilall -9 "nm-applet"
+nm-applet &
+killall -9 picom
+picom --experimental-backends &
+numlockx on
+killall -9 xfce4-power-manager
+xfce4-power-manager &
+killall -9 blueman-applet
+blueman-applet &
