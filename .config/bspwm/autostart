@@ -11,3 +11,4 @@ killall -9 xfce4-power-manager
 xfce4-power-manager &
 killall -9 blueman-applet
 blueman-applet &
+emacs --daemon &

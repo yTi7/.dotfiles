@@ -84,10 +84,10 @@ alt + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+#super + {o,i}
+#	bspc wm -h off; \
+#	bspc node {older,newer} -f; \
+#	bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -176,3 +176,10 @@ super + F1
 
 super + F2
   rofi-bluetooth
+
+super+o;super+e
+  emacsclient -c -a "emacs"
+
+super+o; super+w
+  firefox
+
