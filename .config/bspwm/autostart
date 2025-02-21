@@ -1,5 +1,6 @@
 #/bin/bash
 
+xrandr -s 1920x1080
 nitrogen --restore &
 ~/.config/bspwm/polybar/launch.sh &
 kilall -9 "nm-applet"
