@@ -103,6 +103,7 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 # abbr
 source "$HOME/scripts/zsh/abbr.zsh"
+abbr lsd='eza --icons -hl'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
