@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	xfce4-terminal
+	alacritty
 
 # program launcher
 super + d
@@ -38,6 +38,13 @@ super + {_,shift + }q
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
+
+super + shift + m
+  bspc config -d focused window_gap 0
+
+super + alt + m
+  bspc config -d focused window_gap 12
+
 
 # send the newest marked node to the newest preselected node
 super + y
@@ -73,7 +80,7 @@ super + {_,shift + }space
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-super + {j,l}
+super + {h,l}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
@@ -130,7 +137,7 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 # Screenshot
 Print
-  scrot ~/Pictures/Screenshot-$(date +%F_%T).png
+  scrot ~/Pictures/_screenshots/Screenshot-$(date +%F_%T).png
 
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh
@@ -168,8 +175,8 @@ super + w
 super + shift + p
   ~/.config/polybar/launch.sh 
 
-super + n 
-  thunar  
+super + e 
+  pcmanfm  
 
 super + F1
   ~/.config/bspwm/scripts/keybindings_rofi.sh

@@ -37,4 +37,5 @@ abbr yss="yadm status -s"
 abbr yadd="yadm add"
 abbr ycom="yadm commit -m"
 abbr lsd="eza --icons"
+abbr nv="nvim"
 

@@ -13,3 +13,5 @@ xfce4-power-manager &
 killall -9 blueman-applet
 blueman-applet &
 emacs --daemon &
+killall -9 dunst &
+dunst -startup_notification  &
